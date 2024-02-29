@@ -2,11 +2,11 @@ const mongoose = require('mongoose');
 
 const connectDB = async () => {
   try {
-    await mongoose.connect('mongodb://localhost:27017/food_oredering_app', {
+    await mongoose.connect('mongodb://localhost:27017/exams', {
       useNewUrlParser: true,
       useUnifiedTopology: true,
-      useCreateIndex: true,
-      useFindAndModify: false
+      // useCreateIndex: true,
+      // useFindAndModify: false
     });
     console.log('MongoDB Connected');
   } catch (err) {
