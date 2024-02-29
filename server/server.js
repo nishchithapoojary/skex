@@ -10,9 +10,9 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
 // Define routes
-app.use('/api/auth', require('./routes/authRoutes'));
-app.use('/api/food', require('./routes/foodRoutes'));
-app.use('/api/order', require('./routes/orderRoutes'));
+app.use('/api/auth', require('./router/authRoutes'));
+app.use('/api/food', require('./router/foodRoutes'));
+app.use('/api/order', require('./router/orderRoutes'));
 
 // Start server
 const PORT = process.env.PORT || 3000;
